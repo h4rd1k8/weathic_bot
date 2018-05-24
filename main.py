@@ -40,35 +40,35 @@ def get_weather(message):
 
 def send_music(message,formatted_data):
     if formatted_data.find('clear'):
-        path = '/home/ubuntu/yerdaulet_assyl/weathicbotv1/sunny/'
+        path = '~/yerdaulet_assyl/weathicbotv1/sunny/'
         files = os.listdir(path)
         for i in files:
             audio = open(path+i, 'rb')
             bot.send_audio(message.chat.id, audio)
             audio.close()
     if formatted_data.find('sun'):
-        path = '/home/ubuntu/yerdaulet_assyl/weathicbotv1/sunny/'
+        path = '~/yerdaulet_assyl/weathicbotv1/sunny/'
         files = os.listdir(path)
         for i in files:
             audio = open(path+i, 'rb')
             bot.send_audio(message.chat.id, audio)
             audio.close()
     elif formatted_data.find('cloud'):
-        path = '/home/ubuntu/yerdaulet_assyl/weathicbotv1/cloudy/'
+        path = '~/yerdaulet_assyl/weathicbotv1/cloudy/'
         files = os.listdir(path)
         for i in files:
             audio = open(path+i, 'rb')
             bot.send_audio(message.chat.id, audio)
             audio.close()
     elif formatted_data.find('rain'):
-        path = '/home/ubuntu/yerdaulet_assyl/weathicbotv1/rainy/'
+        path = '~/yerdaulet_assyl/weathicbotv1/rainy/'
         files = os.listdir(path)
         for i in files:
             audio = open(path+i, 'rb')
             bot.send_audio(message.chat.id, audio)
             audio.close()
     elif formatted_data.find('wind'):
-        path = '/home/ubuntu/yerdaulet_assyl/weathicbotv1/cloudy/'
+        path = '~/yerdaulet_assyl/weathicbotv1/cloudy/'
         files = os.listdir(path)
         for i in files:
             audio = open(path+i, 'rb')
