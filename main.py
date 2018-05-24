@@ -40,35 +40,35 @@ def get_weather(message):
 
 def send_music(message,formatted_data):
     if formatted_data.find('clear'):
-        path = '/home/yerdaulet/weathicbot/sunny/'
+        path = 'https://github.com/h4rd1k8/weathicbotv1/tree/master/cloudy/'
         files = os.listdir(path)
         for i in files:
             audio = open(path+i, 'rb')
             bot.send_audio(message.chat.id, audio)
             audio.close()
     if formatted_data.find('sun'):
-        path = '/home/yerdaulet/weathicbot/sunny/'
+        path = 'https://github.com/h4rd1k8/weathicbotv1/tree/master/sunny/'
         files = os.listdir(path)
         for i in files:
             audio = open(path+i, 'rb')
             bot.send_audio(message.chat.id, audio)
             audio.close()
     elif formatted_data.find('cloud'):
-        path = '/home/yerdaulet/weathicbot/cloudy/'
+        path = 'https://github.com/h4rd1k8/weathicbotv1/tree/master/cloudy/'
         files = os.listdir(path)
         for i in files:
             audio = open(path+i, 'rb')
             bot.send_audio(message.chat.id, audio)
             audio.close()
     elif formatted_data.find('rain'):
-        path = '/home/yerdaulet/weathicbot/rainy/'
+        path = 'https://github.com/h4rd1k8/weathicbotv1/tree/master/rainy/'
         files = os.listdir(path)
         for i in files:
             audio = open(path+i, 'rb')
             bot.send_audio(message.chat.id, audio)
             audio.close()
     elif formatted_data.find('wind'):
-        path = '/home/yerdaulet/weathicbot/cloudy/'
+        path = 'https://github.com/h4rd1k8/weathicbotv1/tree/master/cloudy/'
         files = os.listdir(path)
         for i in files:
             audio = open(path+i, 'rb')
